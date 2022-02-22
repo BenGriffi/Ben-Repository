@@ -11,7 +11,7 @@ locations extra effects on the tags on your web page)<br>
 Here is typical in document style
 <pre>
 b {
-color: #00ff00;
+  color: #00ff00;
 }
 </pre><br>
 I do CSS inside the tag. It overpowers all other methods<br>
@@ -28,3 +28,27 @@ document.getElementById('myB1').style.backgroundColor = 'yellow'
 <textarea style="position:relative; left:0; top:0; width:200; height:50; ">
 Advanced see if you move this textarea
 </textarea><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul  {
+  list-style: square inside url("sqpurple.gif");
+}
+</style>
+</head>
+<body>
+
+<h1>The list-style Property</h1>
+
+<p>The list-style is a shorthand property for all the list properties.</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
