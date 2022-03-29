@@ -44,4 +44,19 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <input type=button value="Example Extend Class Animal" onClick="{
                                                                 
-  class                                                              
+  class myCat extends myAnimal {
+                                                                
+      myShow(){                                                          
+        document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat<br>'
+    }                                                            
+}    // end extended class myCat
+                                                                
+                                                                
+                                                                
+                                                                
+   myPet = new myCat('Beans', 4)
+   myPet.myShow()
+                                                                
+}">
+
+<div id="myDiv01">...</div>
