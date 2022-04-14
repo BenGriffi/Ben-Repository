@@ -20,13 +20,7 @@
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
-   alert('Sorry, you have to do this!')
-}"><br><br>
-
-
-<textarea id="myArea03" rows=4 cols=70></textarea><br> 
-
-   let myTemp = ''
+      let myTemp = ''
    myString = document.getElementById('myArea03').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
@@ -34,3 +28,7 @@
       if (myString[myLoop] == 'i') {myTemp  = 'h'} 
       myString[myLoop] = myTemp
    }
+
+
+<textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
