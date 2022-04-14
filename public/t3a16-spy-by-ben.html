@@ -26,3 +26,11 @@
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
 
+   let myTemp = ''
+   myString = document.getElementById('myArea03').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+      myString[myLoop] = myTemp
+   }
