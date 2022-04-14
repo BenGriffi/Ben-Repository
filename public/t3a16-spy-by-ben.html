@@ -1,4 +1,3 @@
-
 <h1 align=center>t2a06-spy-name.html</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
@@ -19,16 +18,9 @@
 
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
-
+<input type=button value="decrypt" onclick="{
+   alert('Sorry, you have to do this!')
+}"><br><br>
 
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
-<input type=button value="decrypt" onclick="{
-      let myTemp = ''
-   myString = document.getElementById('myArea03').value.toLowerCase().split('')
-   for (let myLoop=0;   myLoop < myString.length; myLoop++){
-      myTemp = myString[myLoop]
-      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
-      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
-      myString[myLoop] = myTemp
-   }
