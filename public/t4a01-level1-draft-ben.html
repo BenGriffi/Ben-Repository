@@ -23,24 +23,6 @@ Version 0.0.1<br>
 
 
    // put your other keydowns here.
-    let myKey = event.key
-   //  let myKey = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey
-   if (myKey == 'a') {
-
-
-     // either uncomment
-     // clearInterval(myInterval)
-     // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.right = parseInt(document.getElementById('myImg01').style.left) + 3
-     //    myCheckHit()
-     // } ,20)
-
-     // or do the following
-      document.getElementById('myImg01').style.right = parseInt(document.getElementById('myImg01').style.left) + 7
-      myCheckHit()
-   }
-
 
 
 
@@ -79,7 +61,7 @@ function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't4a2-level2.html'  // go to your next level
+       location = 't2a13-keydown.html'  // go to your next level
    }
 
 
