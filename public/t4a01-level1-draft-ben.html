@@ -7,6 +7,17 @@
 <script> 
 
 //Global variables here
+	
+	<input id="myText01" type=text value="" size=50 placeholder="Feedback here"><br>
+
+<input type=button value="Auto Background Left" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
 
 myBgPosY = 0;     // present vertical position
 myBgPosX = 0;    // present horizonal position
