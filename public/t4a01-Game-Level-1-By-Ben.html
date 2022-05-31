@@ -1,9 +1,9 @@
 Version 0.0.1<br>
 
 
-<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="myBackground01.jpg"     onkeydown="{
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     onkeydown="{
 
-let myKey = event.key
+   let myKey = event.key
    //  let myKey = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey
    if (myKey == 'd') {
@@ -12,12 +12,12 @@ let myKey = event.key
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.right = parseInt(document.getElementById('myImg01').style.left) + 3
+     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
      //    myCheckHit()
      // } ,20)
 
      // or do the following
-      document.getElementById('myImg01').style.right = parseInt(document.getElementById('myImg01').style.left) + 7
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
       myCheckHit()
    }
 
@@ -28,7 +28,7 @@ let myKey = event.key
 
 }">
 
-<h1 align=center> <p style="color:DodgerBlue;"> t4a01 Game Level-1 By Ben</h1>
+<h1 align=center>t4a01-game-template-with-wasd-by-fred</h1>
 <br><br><br><br>
 
 <script>
@@ -61,7 +61,7 @@ function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't4a01-Game-Level-1-By-Ben.html'  // go to your next level
+       location = 't2a13-keydown.html'  // go to your next level
    }
 
 
