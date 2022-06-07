@@ -5,18 +5,18 @@ Version 0.0.1<br>
    let myKey = event.key
    //  let myKey = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey
-   if (myKey = 'd') {
+   if (myKey == 'd') {
 
 
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 6
+     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
      //    myCheckHit()
      // } ,20)
 
      // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 14
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 7
       myCheckHit()
    }
 
