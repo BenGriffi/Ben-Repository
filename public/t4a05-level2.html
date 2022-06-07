@@ -1,3 +1,5 @@
+
+
 <script>
 
    // global variables here
@@ -29,15 +31,15 @@ function myHitOther(my1,my2){
 function myCheckHit(){
    document.all.myText01.value = myScore  // show the present score
 
-   if ( myHitOther('sprite','myImg02') ){
-      document.getElementById('sprite').style.left = '20px'
+   if ( myHitOther('myImg01','myImg02') ){
+      document.getElementById('myImg01').style.left = '20px'
       document.all.myText01.value = 'You hit myImg02'  
       myScore -= 1
    }   
    
-   if ( myHitOther('sprite','myImg03') ){
+   if ( myHitOther('myImg01','myImg03') ){
        //alert('you lose')
-      document.getElementById('sprite').style.left = '20px'
+      document.getElementById('myImg01').style.left = '20px'
       document.all.myText01.value = 'You hit myImg03'  
       myScore -= 1
    }   
@@ -51,10 +53,10 @@ function myCheckHit(){
 
    // YOU WIN and go to next level!
 
-   if ( myHitOther('sprite','myImg04') ){
+   if ( myHitOther('myImg01','myImg04') ){
       document.all.myText01.value = 'You hit myImg04 and you win the game!'  
        alert('You Win, now go to the next level')
-      document.getElementById('sprite').style.left = '20px'
+      document.getElementById('myImg01').style.left = '20px'
       location = 'https://www.google.ca'
    }
 
@@ -73,11 +75,11 @@ function myCheckHit(){
    document.all.myText01.value = event.key
 
    if (event.key == 'd') {  // d = go right
-     document.getElementById('sprite').style.left = parseInt(document.getElementById('sprite').style.left) + 10 + 'px'
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
    }   
 
    if (event.key == 's') {   // s = go down
-      document.getElementById('sprite').style.top = parseInt(document.getElementById('sprite').style.top) + 10 + 'px'
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
    }  
 
    // put more here
@@ -108,19 +110,19 @@ function myCheckHit(){
 
 
 <input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('sprite').style.left = parseInt(document.getElementById('sprite').style.left) + 10 + 'px'
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }">
 
 <input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('sprite').style.top = parseInt(document.getElementById('sprite').style.top) + 10 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
 
 
 
-<img id="" src=.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
+<img id="myImg01" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
 <img id="myImg02" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:350px; top:190px;">
 <img id="myImg03" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:190px;">
 <img id="myImg04" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
