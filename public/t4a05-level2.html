@@ -69,6 +69,18 @@ function myCheckHit(){
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"  onkeydown="{
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+  clearInterval(myTimer02)
+  myTimer02 = setInterval(function(){
+     let my02x = Math.floor((Math.random() * 20) - 9) 
+     let my02y = Math.floor((Math.random() * 20) - 9) 
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + my02x + 'px'
+     document.getElementById('myImg02').style.top  = parseInt(document.getElementById('myImg02').style.top)  + my02y + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
 
    document.all.myText01.value = event.key
 
