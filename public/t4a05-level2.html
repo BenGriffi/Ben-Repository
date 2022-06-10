@@ -44,8 +44,8 @@ function myCheckHit(){
    
   // you LOSE refresh the page
    if (myScore <= 0){
-    document.all.myText01.value = 'You Lose scrore at zero!'  
-    alert('Sorry you lose')
+    document.all.myText01.value = 'You Lose score at zero!'  
+    alert('how did you... this is the first level!?')
     location.reload()
    }
 
@@ -55,7 +55,7 @@ function myCheckHit(){
       document.all.myText01.value = 'You hit myImg04 and you win the game!'  
        alert('You Win, now go to the next level')
       document.getElementById('myImg01').style.left = '20px'
-      location = 'https://www.google.ca'
+      location = 'potential-level3.html'
    }
 
    // more if statements here
@@ -78,8 +78,11 @@ function myCheckHit(){
 
    if (event.key == 's') {   // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-   }  
-
+   }
+                                                                                                                     
+   if (event.key == 'a') [  //  a = go up
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+                                                                                                                     
    // put more here
 
 
@@ -93,7 +96,7 @@ function myCheckHit(){
 
 <h1 align=center><font color=Yellow>T4A05 Template with WASD by Fred</font></h1>
 
-<input id="myText01" type=text value="" size=50 placeholder="Feedback here"><br>
+<input id="myText01" type=text value="" size=50 placeholder="wow look its placeholder text"><br>
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
